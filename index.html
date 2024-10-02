@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Panadería</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="inicio">
+        <div class="header-content">
+            <h1>Bienvenidos a la Panadería</h1>
+            <p>El mejor pan artesanal y repostería en la ciudad.</p>
+            <button onclick="scrollToSection('productos')">Ver Productos</button>
+        </div>
+    </header>
+
+    <!-- Sección de productos -->
+    <section id="productos" class="section">
+        <h2>Nuestros Productos</h2>
+        <div class="productos-container">
+            <div class="producto">
+                <img src="/image/galleta chocolate.jpg" alt="Galleta chocolate">
+                <h3>Galleta chocolate</h3>
+                <p>Delicioso galletas hechas a mano .</p>
+            </div>
+            <div class="producto">
+                <img src="/image/pastel.jpg" alt="Pastel">
+                <h3>Pastel</h3>
+                <p>Clásico pastel, perfecto para cualquier ocasión.</p>
+            </div>
+            <div class="producto">
+                <img src="/image/croissant.jpg" alt="Croissant">
+                <h3>Croissant</h3>
+                <p>El mejor Croissant, con sabor a hogar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de nosotros -->
+    <section id="nosotros" class="section">
+        <h2>Sobre Nosotros</h2>
+        <p>Somos una panadería familiar con más de 20 años de experiencia, ofreciendo productos frescos y deliciosos a nuestros clientes. Nos especializamos en pan artesanal, repostería y pasteles para toda ocasión.</p>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto" class="section">
+        <h2>Contacto</h2>
+        <form id="contactForm">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+        <div id="formMessage" class="form-message"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
