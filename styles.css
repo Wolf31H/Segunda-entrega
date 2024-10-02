@@ -11,7 +11,7 @@ body {
 }
 
 .navbar {
-    background-color: #f3e8bb;
+    background-color: #D2B48C;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
@@ -21,7 +21,7 @@ body {
 .navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #030302;
+    color: #FFFFFF;
 }
 
 .navbar ul {
@@ -35,7 +35,7 @@ body {
 
 .navbar ul li a {
     text-decoration: none;
-    color: #030302;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
@@ -47,7 +47,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #030302;
+    color: #ffffff;
 }
 
 .header-content h1 {
@@ -61,11 +61,11 @@ body {
 
 .header-content button {
     padding: 0.7rem 1.5rem;
-    background-color: #f3e8bb;
+    background-color: #D2B48C;
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    color: #cea876;
+    color: #FFFFFF;
     font-weight: bold;
 }
 
@@ -106,9 +106,9 @@ form input, form textarea {
 
 form button {
     padding: 0.7rem;
-    background-color: #eee1af;
+    background-color: #D2B48C;
     border: none;
-    color: #030302;
+    color: #ffffff;
     font-weight: bold;
     cursor: pointer;
 }
@@ -116,4 +116,52 @@ form button {
 .form-message {
     margin-top: 1rem;
     font-size: 1rem;
+}
+
+#footer {
+    background-color: #D2B48C; 
+    color: #FFFFFF;  
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center; 
+    font-family: Arial, sans-serif; 
+    flex-wrap: wrap;   
+}
+
+.pie-de-pagina, .copyright {
+    flex: 1;  
+    margin: 0 20px;  
+}
+
+.pie-de-pagina h4, .copyright h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.pie-de-pagina p, .copyright p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+#footer p {
+    line-height: 1.5;        
+}
+
+.copyright {
+    border-top: 1px solid #FFFFFF; 
+    padding-top: 15px;
+    text-align: right;     
+}
+
+@media (max-width: 768px) {
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .copyright {
+        border-top: none; 
+        padding-top: 0;
+    }
 }
